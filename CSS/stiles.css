@@ -66,7 +66,7 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -84,7 +84,7 @@ p {
 
 .container {
   width: 100%;
-  max-width: 1488px;
+  max-width: 1288px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -181,6 +181,10 @@ p {
 }
 
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 16px 0;
   font-size: 20px;
   font-weight: 300;
   color: var(--color-primery-light);
@@ -189,6 +193,31 @@ p {
 /* Traditions-section */
 .traditions-section {
   padding-top: 96px;
+}
+
+.traditions-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.traditions-content {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  flex-basis: 100%;
+  max-width: 688px;
+}
+
+/* .traditions-title {
+  margin-bottom: 42px;
+} */
+
+.traditions-text {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  margin: 0;
 }
 
 /* Chefs-section */
