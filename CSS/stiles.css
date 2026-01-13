@@ -33,8 +33,7 @@
   --color-primery-light: #faf4ea;
   --color-brand-dark: #465929;
   --color-brand-light: #819b57;
-  /* --color-secondary-dark: ; */
-  --color-secondary-light: #a18268;
+  --color-secondary: #a18268;
 }
 
 /* Base */
@@ -53,12 +52,6 @@ body {
   background-color: lightgray;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 h1,
 h2,
 h3,
@@ -67,6 +60,12 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .visually-hidden {
@@ -106,10 +105,6 @@ p {
 
 .accent-dark {
   color: var(--color-brand-dark);
-}
-
-.accent-secondary {
-  color: var(--color-secondary);
 }
 
 /* Button */
@@ -334,6 +329,25 @@ p {
 }
 
 /* Footer */
+.footer-container {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 24px;
+}
+
 .footer-text {
   font-size: 14px;
+  color: var(--color-secondary);
 }
