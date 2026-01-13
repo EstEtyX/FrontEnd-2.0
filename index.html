@@ -71,6 +71,7 @@
               </div>
             </div>
             <img
+              class="traditions-foto"
               src="./Images/baker-man.jpg"
               alt="чоловік дивиться на стілаж батонів посміхаючись"
             />
@@ -87,6 +88,7 @@
             <li>
               <article class="chef-card">
                 <img
+                  class="chef-foto"
                   src="./Images/nastya-chief.jpg"
                   alt="дівчина посміхаючись тримає в руці тарілку з круасаном"
                 />
@@ -109,6 +111,7 @@
             <li>
               <article class="chef-card">
                 <img
+                  class="chef-foto"
                   src="./Images/vlad-chief.jpg"
                   alt="лисий чоловік в окулярах розкатує на столі тісто скляною бутилкою"
                 />
@@ -175,22 +178,32 @@
       </section>
       <section class="contacts-section section" id="contacts-section">
         <div class="container">
-          <h2 class="section-title">Приєднуйся до мережі пекарень</h2>
-          <p class="accent-dark">Заповни форму, щоб ми звʼязались з тобою!</p>
-          <!-- form -->
-          <button class="button" type="button">Замовити дзвінок</button>
-          <p class="contacts-text">
-            Натискаючи на кнопку я погоджуюсь з
-            <a class="contacts-link" href="#">політикою конфіденційності</a>
-          </p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.16344703612!2d30.48869837598322!3d50.456680986915856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1768037644953!5m2!1sru!2sua"
-            width="600"
-            height="600"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contacts-container">
+            <div class="contacts-block">
+              <h2 class="contacts-title section-title">
+                Приєднуйся до мережі пекарень
+              </h2>
+              <p class="accent-dark">
+                Заповни форму, щоб ми звʼязались з тобою!
+              </p>
+              <!-- form -->
+              <div class="form-block">
+                <button class="button" type="submit">Замовити дзвінок</button>
+                <p class="form-text">
+                  Натискаючи на кнопку я погоджуюсь з
+                  <a class="form-link" href="#">політикою конфіденційності </a>
+                </p>
+              </div>
+            </div>
+            <iframe
+              class="contacts-map contacts-block"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.16344703612!2d30.48869837598322!3d50.456680986915856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1768037644953!5m2!1sru!2sua"
+              height="600"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>

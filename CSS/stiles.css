@@ -114,7 +114,7 @@ p {
 
 /* Button */
 .button {
-  width: 100%;
+  flex-basis: 100%;
   max-width: 238px;
   padding: 16px 32px;
   font-size: 18px;
@@ -216,6 +216,10 @@ p {
   margin: 0;
 }
 
+.traditions-foto {
+  border-radius: 400px 400px 8px 8px;
+}
+
 /* Chefs-section */
 .chefs-title {
   text-align: center;
@@ -231,6 +235,10 @@ p {
 .chef-card {
   display: flex;
   gap: 32px;
+}
+
+.chef-foto {
+  border-radius: 8px 8px 8px 200px;
 }
 
 .chef-content {
@@ -267,6 +275,7 @@ p {
   display: flex;
   flex-basis: calc((100% - 48px) / 3);
   border: 2px solid green;
+  border-radius: 16px;
 }
 
 .format-text {
@@ -287,12 +296,40 @@ p {
   padding-bottom: 96px;
 }
 
-.contacts-text {
+.contacts-container {
+  display: flex;
+  gap: 32px;
+}
+
+.contacts-block {
+  flex-basis: calc((100% - 32px) / 2);
+}
+
+.contacts-title {
+  margin-bottom: 16px;
+  font-size: 56px;
+}
+
+.form-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-basis: 100%;
+  max-width: 238px;
+  margin: 0 auto;
+}
+
+.form-text {
+  text-align: center;
   font-size: 12px;
 }
 
-.contacts-link {
+.form-link {
   color: var(--color-primery-dark);
+}
+
+.contacts-map {
+  border-radius: 16px;
 }
 
 /* Footer */
