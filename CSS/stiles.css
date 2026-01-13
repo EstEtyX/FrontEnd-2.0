@@ -254,21 +254,32 @@ p {
 
 /* Formats-section */
 .formats-title {
+  margin-bottom: 80px;
   text-align: center;
 }
 
 .formats-list {
+  display: flex;
+  gap: 24px;
+}
+
+.format-item {
+  display: flex;
+  flex-basis: calc((100% - 48px) / 3);
+  border: 2px solid green;
+}
+
+.format-text {
+  padding: 248px 24px 24px;
+  font-size: 14px;
+  font-weight: 300;
   color: var(--color-primery-light);
 }
 
 .format-title {
+  margin-bottom: 16px;
   font-size: 24px;
   font-weight: 600;
-}
-
-.format-text {
-  font-size: 14px;
-  font-weight: 300;
 }
 
 /* Contacts-section */
