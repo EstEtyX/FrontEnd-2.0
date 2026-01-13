@@ -311,12 +311,13 @@ p {
 }
 
 .form-block {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  margin: 0 auto;
   flex-basis: 100%;
   max-width: 238px;
-  margin: 0 auto;
+}
+
+.form-button {
+  margin-bottom: 16px;
 }
 
 .form-text {
