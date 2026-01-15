@@ -30,10 +30,11 @@
 
 :root {
   --color-primery-dark: #31261a;
+  --color-primery-normal: #a18268;
   --color-primery-light: #faf4ea;
   --color-brand-dark: #465929;
   --color-brand-light: #819b57;
-  --color-secondary: #a18268;
+  --color-secondary: #cfcfbc;
 }
 
 /* Base */
@@ -49,7 +50,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   color: var(--color-primery-dark);
-  background-color: lightgray;
+  background-color: lightgray; /* remove */
 }
 
 h1,
@@ -160,6 +161,16 @@ ul {
 /* Hero-section */
 .hero-section {
   padding: 272px 0;
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url(../Images/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .hero-title {
@@ -221,6 +232,14 @@ ul {
   margin-bottom: 80px;
 }
 
+.chefs-title::before,
+.chefs-title::after {
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-secondary);
+  content: "";
+}
+
 .chefs-list {
   display: flex;
   justify-content: space-between;
@@ -233,6 +252,8 @@ ul {
 }
 
 .chef-foto {
+  box-shadow: -16px 16px 0 0 var(--color-primery-light),
+    -16px 16px 0 2px var(--color-primery-normal);
   border-radius: 8px 8px 8px 200px;
 }
 
@@ -269,12 +290,24 @@ ul {
 .format-item {
   display: flex;
   flex-basis: calc((100% - 48px) / 3);
-  border: 2px solid green;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
+  border: 2px solid green; /* remuve */
   border-radius: 16px;
 }
 
+.format-article {
+  display: flex;
+  align-items: flex-end;
+  height: 444px;
+}
+
 .format-text {
-  padding: 248px 24px 24px;
+  padding: 0 24px 24px;
   font-size: 14px;
   font-weight: 300;
   color: var(--color-primery-light);
@@ -325,10 +358,19 @@ ul {
 }
 
 .contacts-map {
+  border: none;
   border-radius: 16px;
 }
 
 /* Footer */
+.footer {
+  background-image: url(../Images/footer-image.png);
+  background-color: var(--color-primery-dark);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .footer-container {
   padding: 32px 0;
   display: flex;
@@ -349,5 +391,5 @@ ul {
 
 .footer-text {
   font-size: 14px;
-  color: var(--color-secondary);
+  color: var(--color-primery-normal);
 }
