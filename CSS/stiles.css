@@ -108,6 +108,22 @@ ul {
   color: var(--color-brand-dark);
 }
 
+/* Link */
+.link {
+  color: var(--color-primery-light);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-brand-light);
+}
+
+.footer-link {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 300;
+}
+
 /* Button */
 .button {
   flex-basis: 100%;
@@ -128,20 +144,24 @@ ul {
   background-color: transparent;
 }
 
-/* Link */
-.link {
-  color: var(--color-primery-light);
-  text-decoration: none;
+/* Carusel */
+.carusel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  fill: var(--color-primery-dark);
+  background-color: transparent;
+  border: 2px solid var(--color-primery-dark);
+  border-radius: 50%;
 }
 
-.link:hover {
-  color: var(--color-brand-light);
-}
-
-.address-link {
-  font-style: normal;
-  font-size: 16px;
-  font-weight: 300;
+.carusel-button:hover {
+  background-color: var(--color-primery-dark);
+  fill: var(--color-primery-light);
+  cursor: pointer;
 }
 
 /* Header */
