@@ -176,6 +176,13 @@ ul {
 }
 
 /* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
