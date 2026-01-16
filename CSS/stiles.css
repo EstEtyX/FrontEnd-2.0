@@ -410,11 +410,34 @@ ul {
 
 /* Footer */
 .footer {
+  position: relative;
   background-image: url(../Images/footer-image.png);
   background-color: var(--color-primery-dark);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.footer::before {
+  left: 0;
+  width: 180px;
+  height: 120px;
+  background-image: url(../Images/decor-bread-smoll.png);
+}
+
+.footer::after {
+  right: 0px;
+  width: 378px;
+  height: 188px;
+  background-image: url(../Images/decor-bread-large.png);
 }
 
 .footer-container {
