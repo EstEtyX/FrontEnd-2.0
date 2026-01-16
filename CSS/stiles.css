@@ -259,16 +259,27 @@ ul {
 
 /* Chefs-section */
 .chefs-title {
+  position: relative;
   text-align: center;
   margin-bottom: 80px;
 }
 
 .chefs-title::before,
 .chefs-title::after {
+  position: absolute;
+  bottom: 24px;
   display: block;
-  width: 352px;
+  width: 344px;
   border: 2px solid var(--color-secondary);
   content: "";
+}
+
+.chefs-title::before {
+  left: 0;
+}
+
+.chefs-title::after {
+  right: 0;
 }
 
 .chefs-list {
