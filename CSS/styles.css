@@ -125,6 +125,7 @@ ul {
 .link {
   text-decoration: none;
   color: var(--color-primery-light);
+  transition: color 0.2s;
 }
 
 .link:hover {
@@ -150,6 +151,7 @@ ul {
   border: 2px solid var(--color-brand-light);
   border-radius: 8px;
   cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
 }
 
 .button:hover {
@@ -178,11 +180,16 @@ ul {
   cursor: pointer;
 }
 
+.carusel-button.next {
+  transform: rotate(180deg);
+}
+
 /* Header */
 .header {
   position: absolute;
   left: 0;
   right: 0;
+  padding-top: 32px;
   z-index: 1;
 }
 
@@ -369,8 +376,13 @@ ul {
     rgba(49, 38, 26, 0.71) 72.92%,
     #31261a 100%
   );
-  border: 2px solid green; /* remuve */
   border-radius: 16px;
+  transition: transform 0.2s;
+  border: 2px solid green; /* remuve */
+}
+
+.format-card:hover {
+  transform: scale(1.01);
 }
 
 .format-text {
@@ -494,10 +506,13 @@ ul {
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 1;
+  padding: 32px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.2s, visibility 0.2s;
 }
 
 .backdrop.is-hidden {
@@ -508,13 +523,15 @@ ul {
 
 .modal {
   position: relative;
-  width: 880px;
-  height: 880px;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
   background-color: var(--color-primery-light);
   border-radius: 32px;
 }
 
-.modal-btn-close {
+.modal-button {
   position: absolute;
   top: 40px;
   right: 40px;
