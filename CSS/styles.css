@@ -417,24 +417,9 @@ ul {
   font-size: 56px;
 }
 
-.form-block {
-  margin: 0 auto;
-  flex-basis: 100%;
-  max-width: 238px;
-}
-
-.form-button {
-  margin-bottom: 16px;
-}
-
-.form-text {
-  text-align: center;
-  font-size: 12px;
-}
-
-.form-link {
-  justify-content: center;
-  color: var(--color-primery-dark);
+.contacts-text {
+  margin-bottom: 40px;
+  color: var(--color-brand-dark);
 }
 
 .contacts-map {
@@ -523,12 +508,14 @@ ul {
 
 .modal {
   position: relative;
+  padding: 128px 128px 184px;
   width: 100%;
   max-width: 880px;
   height: 100%;
   max-height: 880px;
   background-color: var(--color-primery-light);
   border-radius: 32px;
+  overflow-y: auto;
 }
 
 .modal-button {
@@ -537,4 +524,74 @@ ul {
   right: 40px;
   width: 32px;
   height: 32px;
+}
+
+.modal-title {
+  margin-bottom: 8px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.modal-text {
+  margin-bottom: 72px;
+  text-align: center;
+  color: var(--color-brand-dark);
+}
+/* Form */
+
+.form-fild {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.17;
+  font-weight: 300;
+  background-color: transparent;
+  border: 1px solid var(--color-primery-normal);
+  border-radius: 8px;
+}
+
+.form-input:focus {
+  color: var(--color-primery-dark);
+  border-color: var(--color-brand-dark);
+  outline: none;
+}
+
+.form-input::placeholder {
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-primery-normal);
+}
+
+.form-input:focus::placeholder {
+  color: var(--color-primery-dark);
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 24px;
+  width: 100%;
+  max-width: 238px;
+}
+
+.form-button.contacts {
+  margin-bottom: 16px;
+}
+
+.form-terms {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 216px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.form-terms-link {
+  justify-content: center;
+  color: var(--color-primery-dark);
+  text-underline-offset: 2px;
 }
