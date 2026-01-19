@@ -66,7 +66,8 @@ p {
 }
 
 a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 ul {
@@ -85,7 +86,9 @@ ul {
 }
 
 .section {
+  margin: 0 auto;
   padding: 48px 0;
+  max-width: 1440px;
 }
 
 .container {
@@ -120,8 +123,8 @@ ul {
 
 /* Link */
 .link {
-  color: var(--color-primery-light);
   text-decoration: none;
+  color: var(--color-primery-light);
 }
 
 .link:hover {
@@ -178,26 +181,36 @@ ul {
 /* Header */
 .header {
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 24px;
+}
+
+.header-nav {
+  display: flex;
+  flex-grow: 1;
+  max-width: 592px;
 }
 
 .header-list {
   display: flex;
   justify-content: center;
-  gap: 64px;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 24px;
 }
 
 /* Hero-section */
 .hero-section {
+  position: relative;
+
   padding: 272px 0;
   background-image: linear-gradient(
       102.76deg,
@@ -221,13 +234,14 @@ ul {
 
 /* Advantages-section */
 .advantages-section {
+  padding: 0;
   background-color: var(--color-brand-light);
 }
 
 .advantages-list {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 24px;
   padding: 16px 0;
   font-size: 20px;
   font-weight: 300;
@@ -242,21 +256,21 @@ ul {
 .traditions-container {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 24px;
+}
+
+.tradition-title {
+  margin-bottom: 40px;
 }
 
 .traditions-content {
-  display: flex;
-  flex-direction: column;
-  gap: 42px;
-  flex-basis: 100%;
   max-width: 688px;
 }
 
 .traditions-text {
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 40px;
   margin: 0;
 }
 
@@ -291,8 +305,9 @@ ul {
 
 .chefs-list {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px 32px;
+  gap: 24px 32px;
 }
 
 .chef-item {
@@ -407,6 +422,7 @@ ul {
 }
 
 .form-link {
+  justify-content: center;
   color: var(--color-primery-dark);
 }
 
@@ -418,6 +434,8 @@ ul {
 /* Footer */
 .footer {
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
   background-image: url(../Images/footer-image.png);
   background-color: var(--color-primery-dark);
   background-repeat: no-repeat;
