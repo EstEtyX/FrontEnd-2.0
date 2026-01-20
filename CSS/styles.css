@@ -516,14 +516,29 @@ ul {
   background-color: var(--color-primery-light);
   border-radius: 32px;
   overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.modal::after {
+  position: absolute;
+  right: 0;
+  width: 152px;
+  height: 232px;
+  background-image: url(../Images/decor-form-bread.png);
+  content: "";
 }
 
 .modal-button {
   position: absolute;
   top: 40px;
   right: 40px;
+  padding: 0;
   width: 32px;
   height: 32px;
+  color: var(--color-primery-dark);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .modal-title {
@@ -537,8 +552,8 @@ ul {
   text-align: center;
   color: var(--color-brand-dark);
 }
-/* Form */
 
+/* Form */
 .form-fild {
   display: block;
   margin-bottom: 32px;
