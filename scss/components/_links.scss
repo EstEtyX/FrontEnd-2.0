@@ -1,0 +1,15 @@
+.link {
+  text-decoration: none;
+  color: var(--color-primery-light);
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--color-brand-light);
+}
+
+.footer-link {
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 300;
+}
