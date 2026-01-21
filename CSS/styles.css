@@ -367,8 +367,8 @@ ul {
 }
 
 .format-card {
+  position: relative;
   display: flex;
-  align-items: flex-end;
   aspect-ratio: 3/4;
   background-image: linear-gradient(
     180deg,
@@ -378,14 +378,26 @@ ul {
   );
   border-radius: 16px;
   transition: transform 0.2s;
-  border: 2px solid green; /* remuve */
 }
 
 .format-card:hover {
   transform: scale(1.01);
 }
 
+.format-image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
 .format-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   padding: 0 24px 24px;
   font-size: 14px;
   font-weight: 300;

@@ -149,6 +149,11 @@
             <ul class="formats-list">
               <li class="format-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./Images/walrus-card.jpg"
+                    alt="walrus format"
+                  />
                   <div class="format-text">
                     <h3 class="format-title" lang="en">Walrus</h3>
                     <p>Площа: до 120 м2</p>
@@ -163,6 +168,11 @@
               </li>
               <li class="format-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./Images/horseshoe-card.jpg"
+                    alt="horseshoe format"
+                  />
                   <div class="format-text">
                     <h3 class="format-title" lang="en">Horseshoe</h3>
                     <p>Площа: до 25 м2</p>
@@ -174,6 +184,11 @@
               </li>
               <li class="format-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./Images/handlebar-card.jpg"
+                    alt="handlebar format"
+                  />
                   <div class="format-text">
                     <h3 class="format-title" lang="en">Handlebar</h3>
                     <p>Площа: до 15 м2</p>
@@ -205,7 +220,7 @@
               <p class="contacts-text">
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
-              <form name="contacts-form" autocomplete="off" novalidate>
+              <form name="contacts-form" autocomplete="off">
                 <div class="form-fild">
                   <label class="form-label visually-hidden" for="user-name"
                     >ім'я
@@ -216,6 +231,7 @@
                     name="user-name"
                     id="user-name"
                     placeholder="ім'я"
+                    required
                   />
                 </div>
                 <div class="form-fild">
@@ -228,6 +244,7 @@
                     name="user-tel"
                     id="user-tel"
                     placeholder="Телефон"
+                    required
                   />
                 </div>
                 <div class="form-fild">
@@ -240,6 +257,7 @@
                     name="user-email"
                     id="user-email"
                     placeholder="Електронна пошта"
+                    required
                   />
                 </div>
                 <button class="form-button button contacts" type="submit">
@@ -328,7 +346,7 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-button modal-btn-close" type="button">
           <svg width="16" height="16">
@@ -339,7 +357,7 @@
         <p class="modal-text">
           Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
         </p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-fild">
             <label class="form-label visually-hidden" for="user-name"
               >ім'я
@@ -350,6 +368,7 @@
               name="user-name"
               id="user-name"
               placeholder="ім'я"
+              required
             />
           </div>
           <div class="form-fild">
@@ -362,6 +381,7 @@
               name="user-tel"
               id="user-tel"
               placeholder="Телефон"
+              required
             />
           </div>
           <div class="form-fild">
@@ -374,6 +394,7 @@
               name="user-email"
               id="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
           <button class="form-button button" type="submit">
