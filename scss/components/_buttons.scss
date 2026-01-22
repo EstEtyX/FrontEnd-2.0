@@ -11,10 +11,9 @@
   border-radius: 8px;
   cursor: pointer;
   transition: color 0.2s, background-color 0.2s;
-}
 
-.button:hover {
-  color: var(--color-brand-light);
-  background-color: transparent;
+  &:hover {
+    color: var(--color-brand-light);
+    background-color: transparent;
+  }
 }
-

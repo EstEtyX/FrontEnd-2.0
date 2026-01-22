@@ -12,7 +12,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   color: var(--color-primery-dark);
-  background-color: lightgray; /* remove */
+  background-color: var(--color-primery-light);
 }
 
 h1,
@@ -35,4 +35,3 @@ ul {
   margin: 0;
   padding: 0;
 }
-

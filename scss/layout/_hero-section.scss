@@ -12,12 +12,12 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-}
-
-.hero-title {
-  margin-bottom: 0;
-  font-size: 128px;
-  font-weight: 900;
-  color: var(--color-primery-light);
-  text-align: center;
+  
+  &__title {
+    margin-bottom: 0;
+    font-size: 128px;
+    font-weight: 900;
+    color: var(--color-primery-light);
+    text-align: center;
+  }
 }

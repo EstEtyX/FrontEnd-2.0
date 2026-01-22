@@ -3,20 +3,24 @@
 
 @import "./base";
 @import "./utils/utils";
+@import "./utils/text";
+
+@import "./components/buttons";
+@import "./components/carusel-button";
+@import "./components/chef-card";
+@import "./components/form-terms";
+@import "./components/format-card";
+@import "./components/input";
+@import "./components/links";
+@import "./components/modal";
 
 @import "./layout/advantages-section";
 @import "./layout/chefs-section";
 @import "./layout/contacts-section";
+@import "./layout/container";
 @import "./layout/footer";
 @import "./layout/formats-section";
-@import "./layout/forms";
 @import "./layout/header";
 @import "./layout/hero-section";
+@import "./layout/section";
 @import "./layout/traditions-section";
-
-@import "./components/backdrop";
-@import "./components/buttons";
-@import "./components/carusel";
-@import "./components/links";
-@import "./components/modal";
-
