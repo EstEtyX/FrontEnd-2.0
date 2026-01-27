@@ -6,16 +6,17 @@
 @import "./utils/text";
 
 @import "./components/buttons";
+@import "./components/backdrop";
 @import "./components/carusel-button";
 @import "./components/chef-card";
 @import "./components/form-terms";
 @import "./components/format-card";
 @import "./components/input";
 @import "./components/links";
+@import "./components/logo";
 @import "./components/modal";
 
 @import "./layout/advantages-section";
-@import "./layout/backdrop";
 @import "./layout/chefs-section";
 @import "./layout/contacts-section";
 @import "./layout/container";
@@ -23,5 +24,6 @@
 @import "./layout/formats-section";
 @import "./layout/header";
 @import "./layout/hero-section";
+@import "./layout/mobile-menu.scss";
 @import "./layout/section";
 @import "./layout/traditions-section";

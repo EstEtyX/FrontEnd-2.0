@@ -6,4 +6,15 @@
   &:hover {
     color: var(--color-brand-light);
   }
+
+  &--mobile {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-primery-dark);
+
+    @media screen and (min-width: $br-tablet) {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
 }

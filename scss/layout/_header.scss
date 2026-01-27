@@ -2,8 +2,12 @@
   position: absolute;
   left: 0;
   right: 0;
-  padding-top: 32px;
+  padding-top: 16px;
   z-index: 1;
+
+  @media screen and (min-width: $br-desktop) {
+    padding-top: 32px;
+  }
 
   &__container {
     display: flex;
@@ -13,9 +17,14 @@
   }
 
   &__nav {
-    display: flex;
-    flex-grow: 1;
-    max-width: 592px;
+    display: none;
+
+    @media screen and (min-width: $br-desktop) {
+      display: flex;
+      flex-grow: 1;
+      margin: 0 auto;
+      max-width: 592px;
+    }
   }
 
   &__list {
@@ -24,5 +33,29 @@
     justify-content: space-between;
     flex-grow: 1;
     gap: 24px;
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $br-desktop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media screen and (min-width: $br-desktop) {
+      display: none;
+    }
   }
 }
