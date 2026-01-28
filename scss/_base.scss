@@ -8,11 +8,20 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 300;
   color: var(--color-primery-dark);
   background-color: var(--color-primery-light);
+
+  @media screen and (min-width: $br-tablet) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $br-desktop) {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 h1,
@@ -32,8 +41,7 @@ ul {
 }
 
 // img {
-//   display: flex;
-//   align-items: flex-start;
+//   display: block;
 //   width: 100%;
 //   height: auto;
 // }

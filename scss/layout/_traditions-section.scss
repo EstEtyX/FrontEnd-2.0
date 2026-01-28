@@ -27,7 +27,6 @@
     gap: 16px;
     margin: 0;
     font-size: 16px;
-    font-weight: 300;
 
     @media screen and (min-width: $br-desktop) {
       gap: 40px;
@@ -40,7 +39,7 @@
     @media screen and (min-width: $br-tablet) {
       display: block;
       border-radius: 400px 400px 8px 8px;
-      max-width: 320px;
+      max-width: 304px;
     }
 
     @media screen and (min-width: $br-desktop) {
