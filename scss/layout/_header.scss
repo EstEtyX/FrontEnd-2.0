@@ -5,7 +5,7 @@
   padding-top: 16px;
   z-index: 1;
 
-  @media screen and (min-width: $br-desktop) {
+  @media screen and (min-width: $bp-desktop) {
     padding-top: 32px;
   }
 
@@ -19,7 +19,7 @@
   &__nav {
     display: none;
 
-    @media screen and (min-width: $br-desktop) {
+    @media screen and (min-width: $bp-desktop) {
       display: flex;
       flex-grow: 1;
       margin: 0 auto;
@@ -38,7 +38,7 @@
   &__button {
     display: none;
 
-    @media screen and (min-width: $br-desktop) {
+    @media screen and (min-width: $bp-desktop) {
       display: block;
     }
   }
@@ -60,12 +60,12 @@
       color: var(--color-brand-light);
     }
 
-    @media screen and (min-width: $br-tablet) {
+    @media screen and (min-width: $bp-tablet) {
       width: 32px;
       height: 32px;
     }
 
-    @media screen and (min-width: $br-desktop) {
+    @media screen and (min-width: $bp-desktop) {
       display: none;
     }
   }
@@ -74,7 +74,7 @@
     width: 20px;
     height: 14px;
 
-    @media screen and (min-width: $br-tablet) {
+    @media screen and (min-width: $bp-tablet) {
       width: 28px;
       height: 20px;
     }

@@ -14,11 +14,11 @@ body {
   color: var(--color-primery-dark);
   background-color: var(--color-primery-light);
 
-  @media screen and (min-width: $br-tablet) {
+  @media screen and (min-width: $bp-tablet) {
     font-size: 16px;
   }
 
-  @media screen and (min-width: $br-desktop) {
+  @media screen and (min-width: $bp-desktop) {
     font-size: 18px;
     font-weight: 400;
   }

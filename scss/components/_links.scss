@@ -12,7 +12,7 @@
     font-weight: 300;
     color: var(--color-primery-dark);
 
-    @media screen and (min-width: $br-tablet) {
+    @media screen and (min-width: $bp-tablet) {
       font-size: 18px;
       font-weight: 400;
     }

@@ -3,7 +3,7 @@
   align-items: flex-start;
   gap: 16px;
 
-  @media screen and (min-width: $br-desktop) {
+  @media screen and (min-width: $bp-desktop) {
     gap: 32px;
   }
 
@@ -14,7 +14,7 @@
     box-shadow: -10px 10px 0 0 var(--color-primery-light),
       -10px 10px 0 2px var(--color-primery-normal);
 
-    @media screen and (min-width: $br-desktop) {
+    @media screen and (min-width: $bp-desktop) {
       width: 240px;
       height: 390px;
       box-shadow: -16px 16px 0 0 var(--color-primery-light),
@@ -27,11 +27,11 @@
     font-size: 24px;
     font-weight: 600;
 
-    @media screen and (min-width: $br-tablet) {
+    @media screen and (min-width: $bp-tablet) {
       font-size: 32px;
     }
 
-    @media screen and (min-width: $br-desktop) {
+    @media screen and (min-width: $bp-desktop) {
       margin-bottom: 16px;
       font-size: 40px;
     }
@@ -42,7 +42,7 @@
     flex-direction: column;
     gap: 16px;
 
-    @media screen and (min-width: $br-desktop) {
+    @media screen and (min-width: $bp-desktop) {
       gap: 32px;
     }
   }
