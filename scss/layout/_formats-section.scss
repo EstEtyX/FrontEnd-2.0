@@ -4,19 +4,25 @@
     text-align: center;
   }
 
-  &__container {
+  &__slider {
     display: flex;
     align-items: center;
     gap: 32px;
   }
 
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+  &__container {
+    overflow: hidden;
   }
 
-  &__item {
-    flex-basis: calc((100% - 48px) / 3);
+  &__list {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $br-tablet) {
+      display: flex;
+    }
   }
 }
