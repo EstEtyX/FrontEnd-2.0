@@ -1,6 +1,9 @@
 .advantages-section {
+  padding: 20px 0;
+
   @media screen and (min-width: $br-tablet) {
     padding: 0;
+    max-width: 1440px;
     background-color: var(--color-brand-light);
   }
   &__list {
