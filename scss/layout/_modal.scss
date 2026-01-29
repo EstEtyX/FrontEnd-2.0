@@ -1,6 +1,6 @@
 .modal {
   position: relative;
-  padding: 128px 128px 184px;
+  padding: 40px 40px 56px;
   width: 100%;
   max-width: 880px;
   height: 100%;
@@ -9,6 +9,14 @@
   border-radius: 32px;
   overflow-y: auto;
   scrollbar-width: none;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 64px 64px 92px;
+  }
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 128px 128px 184px;
+  }
 
   &::after {
     position: absolute;
@@ -41,20 +49,36 @@
   }
 
   &__text {
-    margin-bottom: 72px;
+    margin-bottom: 24px;
     text-align: center;
     color: var(--color-brand-dark);
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 72px;
+    }
   }
 
   &__form-fild {
     display: block;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 32px;
+    }
   }
 
   &__button {
     display: block;
-    margin: 0 auto 24px;
+    margin: 0 auto 8px;
     width: 100%;
     max-width: 238px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0 auto 24px;
+    }
   }
 }
