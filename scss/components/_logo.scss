@@ -8,4 +8,9 @@
     width: 114px;
     height: 56px;
   }
+
+  &--mobile {
+    background-color: var(--color-primery-dark);
+    border-radius: 4px;
+  }
 }

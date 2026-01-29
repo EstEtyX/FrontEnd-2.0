@@ -30,8 +30,8 @@
   &__button {
     &--close {
       position: absolute;
-      top: 40px;
-      right: 40px;
+      top: 16px;
+      right: 16px;
       padding: 0;
       width: 32px;
       height: 32px;
@@ -39,6 +39,11 @@
       background-color: transparent;
       border: none;
       cursor: pointer;
+
+      @media screen and (min-width: $bp-tablet) {
+        top: 40px;
+        right: 40px;
+      }
     }
   }
 
