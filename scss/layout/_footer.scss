@@ -5,36 +5,62 @@
   background-image: url(../Images/footer-image.png);
   background-color: var(--color-primery-dark);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-size: cover;
+  overflow: hidden;
 
-  // &::before,
-  // &::after {
-  //   position: absolute;
-  //   bottom: 0;
-  //   background-repeat: no-repeat;
-  //   content: "";
-  // }
+  @media screen and (min-width: $bp-tablet) {
+    background-position: center;
+  }
 
-  // &::before {
-  //   left: 0;
-  //   width: 180px;
-  //   height: 120px;
-  //   background-image: url(../Images/decor-bread-smoll.png);
-  // }
+  &::before,
+  &::after {
+    position: absolute;
+    display: none;
+    background-repeat: no-repeat;
+    content: "";
+  }
 
-  // &::after {
-  //   right: 0px;
-  //   width: 378px;
-  //   height: 188px;
-  //   background-image: url(../Images/decor-bread-large.png);
-  // }
+  &::before {
+    display: block;
+    top: 56px;
+    left: 0;
+    width: 92px;
+    height: 196px;
+    background-image: url(../Images/bread-footer-smoll.png);
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      top: 50%;
+      left: 0;
+      width: 180px;
+      height: 120px;
+      background-image: url(../Images/decor-bread-smoll.png);
+    }
+  }
+
+  &::after {
+    display: block;
+    right: -10px;
+    bottom: -29px;
+    width: 112px;
+    height: 120px;
+    background-image: url(../Images/bread-footer-big.png);
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      right: 0;
+      bottom: 0;
+      width: 378px;
+      height: 188px;
+      background-image: url(../Images/decor-bread-large.png);
+    }
+  }
 
   &__container {
     padding: 32px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 18px;
 
     @media screen and (min-width: $bp-tablet) {
@@ -45,7 +71,11 @@
   }
 
   &__logo {
-    margin-bottom: 18px;
+    margin: 0 auto 18px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+    }
   }
 
   &__blocks {
@@ -56,6 +86,15 @@
 
     @media screen and (min-width: $bp-tablet) {
       align-items: flex-start;
+    }
+
+    &--tern {
+      margin-top: -8px;
+      gap: 8px;
+
+      @media screen and (min-width: $bp-tablet) {
+        gap: 16px;
+      }
     }
   }
 
@@ -70,7 +109,6 @@
   }
 
   &__link {
-    // text-align: center;
     font-style: normal;
     font-size: 14px;
     font-weight: 300;
@@ -82,7 +120,11 @@
 
   &__text {
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     color: var(--color-primery-normal);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 14px;
+    }
   }
 }
