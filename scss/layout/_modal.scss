@@ -23,8 +23,14 @@
     right: 0;
     width: 152px;
     height: 232px;
-    background-image: url(../Images/decor-form-bread.png);
+    background-image: url(../Images/decor-form-bread.avif);
     content: "";
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../Images/decor-form-bread@2x.avif);
+    }
   }
 
   &__button {

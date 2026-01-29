@@ -13,6 +13,12 @@
     background-position: center;
   }
 
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../Images/footer-image@2x.png);
+  }
+
   &::before,
   &::after {
     position: absolute;
@@ -27,7 +33,7 @@
     left: 0;
     width: 92px;
     height: 196px;
-    background-image: url(../Images/bread-footer-smoll.png);
+    background-image: url(../Images/bread-footer-smoll.avif);
 
     @media screen and (min-width: $bp-tablet) {
       display: block;
@@ -35,7 +41,19 @@
       left: 0;
       width: 180px;
       height: 120px;
-      background-image: url(../Images/decor-bread-smoll.png);
+      background-image: url(../Images/decor-bread-smoll.avif);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../Images/decor-bread-smoll@2x.avif);
+      }
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../Images/bread-footer-smoll@2x.avif);
     }
   }
 
@@ -45,7 +63,7 @@
     bottom: -29px;
     width: 112px;
     height: 120px;
-    background-image: url(../Images/bread-footer-big.png);
+    background-image: url(../Images/bread-footer-big.avif);
 
     @media screen and (min-width: $bp-tablet) {
       display: block;
@@ -53,7 +71,19 @@
       bottom: 0;
       width: 378px;
       height: 188px;
-      background-image: url(../Images/decor-bread-large.png);
+      background-image: url(../Images/decor-bread-large.avif);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../Images/decor-bread-large@2x.avif);
+      }
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../Images/bread-footer-big@2x.avif);
     }
   }
 
