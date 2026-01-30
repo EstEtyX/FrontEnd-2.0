@@ -60,6 +60,11 @@
       color: var(--color-brand-light);
     }
 
+    &:active {
+      color: var(--color-brand-light);
+      border: none;
+    }
+
     @media screen and (min-width: $bp-tablet) {
       width: 32px;
       height: 32px;
