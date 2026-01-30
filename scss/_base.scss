@@ -22,6 +22,11 @@ body {
     font-size: 18px;
     font-weight: 400;
   }
+
+  &.lock-scroll {
+    overflow: hidden;
+    touch-action: none; /* iOS fix */
+  }
 }
 
 h1,
