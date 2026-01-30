@@ -57,18 +57,34 @@
                 </button>
               </div>
               <ul class="mobile-menu__menu">
-                <a class="link link--mobile" href="#traditions-section">
-                  <li>Наші традиції</li>
-                </a>
-                <a class="link link--mobile" href="#chefs-section">
-                  <li>Шеф-кухарі</li>
-                </a>
-                <a class="link link--mobile" href="#formats-section">
-                  <li>Формати</li>
-                </a>
-                <a class="link link--mobile" href="#contacts-section">
-                  <li>Контакти</li>
-                </a>
+                <li>
+                  <a
+                    class="link link--mobile menu-btn-close"
+                    href="#traditions-section"
+                    >Наші традиції
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="link link--mobile menu-btn-close"
+                    href="#chefs-section"
+                    >Шеф-кухарі
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="link link--mobile menu-btn-close"
+                    href="#formats-section"
+                    >Формати
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="link link--mobile menu-btn-close"
+                    href="#contacts-section"
+                    >Контакти
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -333,36 +349,40 @@
               </p>
               <form name="contacts-form" autocomplete="off">
                 <div class="contacts-section__form-fild">
-                  <label class="visually-hidden" for="user-name">Ім'я</label>
+                  <label class="visually-hidden" for="user-name-contacts"
+                    >Ім'я</label
+                  >
                   <input
                     class="input"
                     type="text"
                     name="user-name"
-                    id="user-name"
+                    id="user-name-contacts"
                     placeholder="ім'я"
                     required
                   />
                 </div>
                 <div class="contacts-section__form-fild">
-                  <label class="visually-hidden" for="user-tel">Телефон</label>
+                  <label class="visually-hidden" for="user-tel-contacts"
+                    >Телефон</label
+                  >
                   <input
                     class="input"
                     type="tel"
                     name="user-tel"
-                    id="user-tel"
+                    id="user-tel-contacts"
                     placeholder="Телефон"
                     required
                   />
                 </div>
                 <div class="contacts-section__form-fild">
-                  <label class="visually-hidden" for="user-email"
+                  <label class="visually-hidden" for="user-email-contacts"
                     >Електронна пошта
                   </label>
                   <input
                     class="input"
                     type="email"
                     name="user-email"
-                    id="user-email"
+                    id="user-email-contacts"
                     placeholder="Електронна пошта"
                     required
                   />
@@ -428,19 +448,19 @@
                   вул. Січових Стрільців 54
                 </a>
               </li>
-              <div class="footer__social">
-                <a class="link link__social" href="#">
-                  <svg width="32" height="32">
-                    <use href="./Images/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-                <a class="link link__social" href="#">
-                  <svg width="32" height="32">
-                    <use href="./Images/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </div>
             </ul>
+            <div class="footer__social">
+              <a class="link link__social" href="#">
+                <svg width="32" height="32">
+                  <use href="./Images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a class="link link__social" href="#">
+                <svg width="32" height="32">
+                  <use href="./Images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </div>
           </address>
           <div class="footer__blocks footer__blocks--tern">
             <a class="footer__link link" href="#" target="_blank"
@@ -465,36 +485,36 @@
         </p>
         <form name="modal-form" autocomplete="off">
           <div class="modal__form-fild">
-            <label class="visually-hidden" for="user-name">ім'я</label>
+            <label class="visually-hidden" for="user-name-modal">ім'я</label>
             <input
               class="input"
               type="text"
               name="user-name"
-              id="user-name"
+              id="user-name-modal"
               placeholder="ім'я"
               required
             />
           </div>
           <div class="modal__form-fild">
-            <label class="visually-hidden" for="user-tel">Телефон</label>
+            <label class="visually-hidden" for="user-tel-modal">Телефон</label>
             <input
               class="input"
               type="tel"
               name="user-tel"
-              id="user-tel"
+              id="user-tel-modal"
               placeholder="Телефон"
               required
             />
           </div>
           <div class="modal__form-fild">
-            <label class="visually-hidden" for="user-email"
+            <label class="visually-hidden" for="user-email-modal"
               >Електронна пошта
             </label>
             <input
               class="input"
               type="email"
               name="user-email"
-              id="user-email"
+              id="user-email-modal"
               placeholder="Електронна пошта"
               required
             />

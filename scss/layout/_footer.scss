@@ -13,12 +13,6 @@
     background-position: center;
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../Images/footer-image@2x.png);
-  }
-
   &::before,
   &::after {
     position: absolute;
