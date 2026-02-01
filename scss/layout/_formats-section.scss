@@ -19,7 +19,11 @@
   }
 
   &__list {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
+    
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 32px;
+    }
   }
 
   &__button {
